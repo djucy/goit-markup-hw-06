@@ -51,7 +51,7 @@
         <section class="section section-title">
             <div class="container-title container">
                 <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-                <button data-modal-open type="button" class="button-service">Заказать услугу</button>
+                <button data-modal-open type="button" class="button-service button-service-hero">Заказать услугу</button>
            </div> 
         </section>
         
@@ -368,7 +368,7 @@
                     </address>
             </div>
             <div class="join-container">
-                <b class="caption-advantage">присоединяйтесь</b>
+                <b class="caption-advantage color-b">присоединяйтесь</b>
                 <ul class="list-networking">
                     <li class="item-networking">
                         <a class="item-networking-link color-icon-join" href="">
@@ -401,6 +401,17 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscribe-box">
+                <b  class="caption-advantage color-b">Подпишитесь на рассылку</b>
+                
+                <form>
+                    <div>
+                    <label for="">E-mail
+                        <input type="email">  
+                    </label>
+                    <button  class="button-service" type="submit">Подписаться</button></div>
+                </form>
+            </div>
         </div>
     </section>
 </footer>
@@ -423,33 +434,61 @@
                     <li>
                     <label class="caption-label" for="name">
                             Имя</label>
-                            <input type="text" name="user-name" id="name">
-                        
+                            <div class="form-list-box">
+                                <input class="form-input" type="text" name="user-name" id="name">
+                                <svg class="form-icon" width="18px" height="18px">
+                                    <use href="./images/icons.svg#icon-person-black"></use>
+                                </svg>
+                                
+                            </div>
                     </li> 
                     <li>
                         <label class="caption-label" for="tel">
                             Телефон</label>
-                            <input type="tel" name="tel" id="tel">
+                           <div class="form-list-box">
+                                <input class="form-input" type="tel" name="tel" id="tel">
+                                <svg class="form-icon" width="18px" height="18px">
+                                    <use href="./images/icons.svg#icon-phone-black"></use>
+                                </svg>
+                                
+                    </div>
                         
                     </li>
                     <li>
                         <label class="caption-label" for="mail">
                             Почта</label>
-                            <input type="email" name="email" id="mail">
+                            <div class="form-list-box">
+                               <input class="form-input" type="email" name="email" id="mail">
+                                <svg class="form-icon" width="18px" height="18px">
+                                    <use href="./images/icons.svg#icon-email-black"></use>
+                                </svg>
+                                
+                                
+                            
+                        </div>
                         
                     </li>
                     <li>
                         <label class="caption-label" for="comment">Комментарий</label>
-                    <textarea name="commentary" id="comment" rows="6" placeholder="Введите текст"></textarea>
+                    <textarea name="commentary" id="comment" placeholder="Введите текст"></textarea>
                     </li>
                 
                 </ul>
-                    
-                    <label for="">
-                        <input type="checkbox">
-                        Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
+                   
+                
+                        <label class="policy-box" for="policy">
+
+                        <input class="check-box-hidden" type="checkbox" id="policy">
+                        <span class="check-box">
+                            <!-- <svg width="16px" height="15px">
+                                <use href="./images/icons.svg#icon-Vector"></use>
+                            </svg> -->
+                        </span>
+                        <span class="text-advantage text-advantage-position">Соглашаюсь с рассылкой и принимаю</span>
+                        <a class="link-policy" href="">Условия договора</a> 
                     </label>
-                    <button type="submit">Отправить</button>
+                
+                    <button class="button-service button-service-modal" type="submit">Отправить</button>
             </form>
         </div>
     </div>
