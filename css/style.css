@@ -438,7 +438,6 @@ p {
 }
 .section-footer {
   max-width: 1600px;
-  height: 252px;
   margin-left: auto;
   margin-right: auto;
   background: var(--black-rock);
@@ -446,6 +445,7 @@ p {
 
 .container-footer {
   display: flex;
+  height: 252px;
 }
 
 .adress-container {
